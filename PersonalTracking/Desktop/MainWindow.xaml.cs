@@ -24,5 +24,12 @@ namespace Desktop
         {
             InitializeComponent();
         }
+
+        private void StudentViewControl_Loaded(object sender, RoutedEventArgs e)
+        {
+            Desktop.ViewModel.StudentViewModel studentViewModelObject = new Desktop.ViewModel.StudentViewModel();
+            studentViewModelObject.LoadStudents();
+            StudentViewControl.DataContext = studentViewModelObject;
+        }
     }
 }

@@ -15,13 +15,17 @@ namespace Desktop.Model
     {
         private string firstName;
         private string lastName;
-
+         
         public string FirstName
         {
-            get { return firstName; }
+            get
+            {
+                return firstName;
+            }
+
             set
             {
-                if (firstName != null)
+                if (firstName != value)
                 {
                     firstName = value;
                     RaisePropertyChanged("FirstName");
