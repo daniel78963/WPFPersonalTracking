@@ -22,7 +22,7 @@ namespace Desktop
     {
         public MainWindow()
         {
-            InitializeComponent();
+            InitializeComponent(); 
         }
 
         private void StudentViewControl_Loaded(object sender, RoutedEventArgs e)

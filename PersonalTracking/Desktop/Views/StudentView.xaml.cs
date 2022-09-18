@@ -23,6 +23,7 @@ namespace Desktop.Views
         public StudentView()
         {
             InitializeComponent();
+            this.DataContext = new Desktop.ViewModel.StudentViewModel();
         }
     }
 }

@@ -10,6 +10,11 @@ namespace Desktop.ViewModel
 {
     public class StudentViewModel
     {
+        public StudentViewModel()
+        {
+            LoadStudents();
+        }
+
         public ObservableCollection<Student> Students { get; set; }
 
         public void LoadStudents()
