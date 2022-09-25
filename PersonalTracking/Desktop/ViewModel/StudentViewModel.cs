@@ -1,14 +1,10 @@
-﻿using Desktop.Model;
-using System;
-using System.Collections.Generic;
+﻿using Desktop.Contracts;
+using Desktop.Model;
 using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Desktop.ViewModel
 {
-    public class StudentViewModel
+    public class StudentViewModel : IStudentViewModel
     {
         public StudentViewModel()
         {
@@ -24,6 +20,11 @@ namespace Desktop.ViewModel
             students.Add(new Student { FirstName = "Allen", LastName = "Brown" });
             students.Add(new Student { FirstName = "Linda", LastName = "Hamerski" });
             Students = students;
+        }
+
+        public bool StudentsExist()
+        {
+            return true;
         }
     }
 }
